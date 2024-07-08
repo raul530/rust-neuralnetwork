@@ -224,17 +224,16 @@ mod tests {
 
     #[test]
     fn test_elementwise_multiply() {
-        // Create two matrices for testing
+        // Testando legal
         let matrix1 = Matrix::new(2, 2, vec![1.0, 2.0, 3.0, 4.0]);
         let matrix2 = Matrix::new(2, 2, vec![5.0, 6.0, 7.0, 8.0]);
 
-        // Perform element-wise multiplication
         let result = matrix1.elementwise_multiply(&matrix2);
 
-        // Define the expected result
+        // Resultado legal
         let expected_result = Matrix::new(2, 2, vec![5.0, 12.0, 21.0, 32.0]);
 
-        // Check if the actual result matches the expected result
+        // Resultado legal eh o resultado certo ou nem?
         assert_eq!(result, expected_result);
     }
 
